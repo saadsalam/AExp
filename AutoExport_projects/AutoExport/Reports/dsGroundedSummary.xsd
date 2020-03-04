@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGroundedSummary" targetNamespace="http://tempuri.org/dsGroundedSummary.xsd" xmlns:mstns="http://tempuri.org/dsGroundedSummary.xsd" xmlns="http://tempuri.org/dsGroundedSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGroundedSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsGroundedSummary" msprop:Generator_UserDSName="dsGroundedSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GroundedSummary" msprop:Generator_TableClassName="GroundedSummaryDataTable" msprop:Generator_TableVarName="tableGroundedSummary" msprop:Generator_TablePropName="GroundedSummary" msprop:Generator_RowDeletingName="GroundedSummaryRowDeleting" msprop:Generator_RowChangingName="GroundedSummaryRowChanging" msprop:Generator_RowEvHandlerName="GroundedSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="GroundedSummaryRowDeleted" msprop:Generator_UserTableName="GroundedSummary" msprop:Generator_RowChangedName="GroundedSummaryRowChanged" msprop:Generator_RowEvArgName="GroundedSummaryRowChangeEvent" msprop:Generator_RowClassName="GroundedSummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer" type="xs:string" minOccurs="0" />
+              <xs:element name="Vessel" msprop:Generator_ColumnVarNameInTable="columnVessel" msprop:Generator_ColumnPropNameInRow="Vessel" msprop:Generator_ColumnPropNameInTable="VesselColumn" msprop:Generator_UserColumnName="Vessel" type="xs:string" minOccurs="0" />
+              <xs:element name="VoyageDate" msprop:Generator_ColumnVarNameInTable="columnVoyageDate" msprop:Generator_ColumnPropNameInRow="VoyageDate" msprop:Generator_ColumnPropNameInTable="VoyageDateColumn" msprop:Generator_UserColumnName="VoyageDate" type="xs:string" minOccurs="0" />
+              <xs:element name="totGrounded" msprop:Generator_ColumnVarNameInTable="columntotGrounded" msprop:Generator_ColumnPropNameInRow="totGrounded" msprop:Generator_ColumnPropNameInTable="totGroundedColumn" msprop:Generator_UserColumnName="totGrounded" type="xs:int" minOccurs="0" />
+              <xs:element name="totReceived" msprop:Generator_ColumnVarNameInTable="columntotReceived" msprop:Generator_ColumnPropNameInRow="totReceived" msprop:Generator_ColumnPropNameInTable="totReceivedColumn" msprop:Generator_UserColumnName="totReceived" type="xs:int" minOccurs="0" />
+              <xs:element name="totSubmitted" msprop:Generator_ColumnVarNameInTable="columntotSubmitted" msprop:Generator_ColumnPropNameInRow="totSubmitted" msprop:Generator_ColumnPropNameInTable="totSubmittedColumn" msprop:Generator_UserColumnName="totSubmitted" type="xs:int" minOccurs="0" />
+              <xs:element name="totCleared" msprop:Generator_ColumnVarNameInTable="columntotCleared" msprop:Generator_ColumnPropNameInRow="totCleared" msprop:Generator_ColumnPropNameInTable="totClearedColumn" msprop:Generator_UserColumnName="totCleared" type="xs:int" minOccurs="0" />
+              <xs:element name="totRcvException" msprop:Generator_ColumnVarNameInTable="columntotRcvException" msprop:Generator_ColumnPropNameInRow="totRcvException" msprop:Generator_ColumnPropNameInTable="totRcvExceptionColumn" msprop:Generator_UserColumnName="totRcvException" type="xs:int" minOccurs="0" />
+              <xs:element name="totCusException" msprop:Generator_ColumnVarNameInTable="columntotCusException" msprop:Generator_ColumnPropNameInRow="totCusException" msprop:Generator_ColumnPropNameInTable="totCusExceptionColumn" msprop:Generator_UserColumnName="totCusException" type="xs:int" minOccurs="0" />
+              <xs:element name="totNoStart" msprop:Generator_ColumnVarNameInTable="columntotNoStart" msprop:Generator_ColumnPropNameInRow="totNoStart" msprop:Generator_ColumnPropNameInTable="totNoStartColumn" msprop:Generator_UserColumnName="totNoStart" type="xs:int" minOccurs="0" />
+              <xs:element name="totVIVTagNumber" msprop:Generator_ColumnVarNameInTable="columntotVIVTagNumber" msprop:Generator_ColumnPropNameInRow="totVIVTagNumber" msprop:Generator_ColumnPropNameInTable="totVIVTagNumberColumn" msprop:Generator_UserColumnName="totVIVTagNumber" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

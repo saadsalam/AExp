@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsVoyagePushCarList" targetNamespace="http://tempuri.org/dsVoyagePushCarList.xsd" xmlns:mstns="http://tempuri.org/dsVoyagePushCarList.xsd" xmlns="http://tempuri.org/dsVoyagePushCarList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsVoyagePushCarList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsVoyagePushCarList" msprop:Generator_UserDSName="dsVoyagePushCarList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PushCarList" msprop:Generator_TableClassName="PushCarListDataTable" msprop:Generator_TableVarName="tablePushCarList" msprop:Generator_TablePropName="PushCarList" msprop:Generator_RowDeletingName="PushCarListRowDeleting" msprop:Generator_RowChangingName="PushCarListRowChanging" msprop:Generator_RowEvHandlerName="PushCarListRowChangeEventHandler" msprop:Generator_RowDeletedName="PushCarListRowDeleted" msprop:Generator_UserTableName="PushCarList" msprop:Generator_RowChangedName="PushCarListRowChanged" msprop:Generator_RowEvArgName="PushCarListRowChangeEvent" msprop:Generator_RowClassName="PushCarListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="linenumber" msprop:Generator_ColumnVarNameInTable="columnlinenumber" msprop:Generator_ColumnPropNameInRow="linenumber" msprop:Generator_ColumnPropNameInTable="linenumberColumn" msprop:Generator_UserColumnName="linenumber" type="xs:int" minOccurs="0" />
+              <xs:element name="BayLocation" msprop:Generator_ColumnVarNameInTable="columnBayLocation" msprop:Generator_ColumnPropNameInRow="BayLocation" msprop:Generator_ColumnPropNameInTable="BayLocationColumn" msprop:Generator_UserColumnName="BayLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" type="xs:string" minOccurs="0" />
+              <xs:element name="yearmakemodel" msprop:Generator_ColumnVarNameInTable="columnyearmakemodel" msprop:Generator_ColumnPropNameInRow="yearmakemodel" msprop:Generator_ColumnPropNameInTable="yearmakemodelColumn" msprop:Generator_UserColumnName="yearmakemodel" type="xs:string" minOccurs="0" />
+              <xs:element name="SizeClass" msprop:Generator_ColumnVarNameInTable="columnSizeClass" msprop:Generator_ColumnPropNameInRow="SizeClass" msprop:Generator_ColumnPropNameInTable="SizeClassColumn" msprop:Generator_UserColumnName="SizeClass" type="xs:string" minOccurs="0" />
+              <xs:element name="DestinationName" msprop:Generator_ColumnVarNameInTable="columnDestinationName" msprop:Generator_ColumnPropNameInRow="DestinationName" msprop:Generator_ColumnPropNameInTable="DestinationNameColumn" msprop:Generator_UserColumnName="DestinationName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

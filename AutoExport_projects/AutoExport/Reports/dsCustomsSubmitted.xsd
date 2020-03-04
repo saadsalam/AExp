@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomsSubmitted" targetNamespace="http://tempuri.org/dsCustomsSubmitted.xsd" xmlns:mstns="http://tempuri.org/dsCustomsSubmitted.xsd" xmlns="http://tempuri.org/dsCustomsSubmitted.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomsSubmitted" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCustomsSubmitted" msprop:Generator_UserDSName="dsCustomsSubmitted">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomsSubmitted" msprop:Generator_TableClassName="CustomsSubmittedDataTable" msprop:Generator_TableVarName="tableCustomsSubmitted" msprop:Generator_TablePropName="CustomsSubmitted" msprop:Generator_RowDeletingName="CustomsSubmittedRowDeleting" msprop:Generator_RowChangingName="CustomsSubmittedRowChanging" msprop:Generator_RowEvHandlerName="CustomsSubmittedRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomsSubmittedRowDeleted" msprop:Generator_UserTableName="CustomsSubmitted" msprop:Generator_RowChangedName="CustomsSubmittedRowChanged" msprop:Generator_RowEvArgName="CustomsSubmittedRowChangeEvent" msprop:Generator_RowClassName="CustomsSubmittedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="forwarder" msprop:Generator_ColumnVarNameInTable="columnforwarder" msprop:Generator_ColumnPropNameInRow="forwarder" msprop:Generator_ColumnPropNameInTable="forwarderColumn" msprop:Generator_UserColumnName="forwarder" type="xs:string" minOccurs="0" />
+              <xs:element name="DestinationName" msprop:Generator_ColumnVarNameInTable="columnDestinationName" msprop:Generator_ColumnPropNameInRow="DestinationName" msprop:Generator_ColumnPropNameInTable="DestinationNameColumn" msprop:Generator_UserColumnName="DestinationName" type="xs:string" minOccurs="0" />
+              <xs:element name="units" msprop:Generator_ColumnVarNameInTable="columnunits" msprop:Generator_ColumnPropNameInRow="units" msprop:Generator_ColumnPropNameInTable="unitsColumn" msprop:Generator_UserColumnName="units" type="xs:int" minOccurs="0" />
+              <xs:element name="customer" msprop:Generator_ColumnVarNameInTable="columncustomer" msprop:Generator_ColumnPropNameInRow="customer" msprop:Generator_ColumnPropNameInTable="customerColumn" msprop:Generator_UserColumnName="customer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

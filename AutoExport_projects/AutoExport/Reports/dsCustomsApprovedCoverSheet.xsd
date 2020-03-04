@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomsApprovedCoverSheet" targetNamespace="http://tempuri.org/dsCustomsApprovedCoverSheet.xsd" xmlns:mstns="http://tempuri.org/dsCustomsApprovedCoverSheet.xsd" xmlns="http://tempuri.org/dsCustomsApprovedCoverSheet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomsApprovedCoverSheet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCustomsApprovedCoverSheet" msprop:Generator_UserDSName="dsCustomsApprovedCoverSheet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomsApprovedCoverSheet" msprop:Generator_TableClassName="CustomsApprovedCoverSheetDataTable" msprop:Generator_TableVarName="tableCustomsApprovedCoverSheet" msprop:Generator_TablePropName="CustomsApprovedCoverSheet" msprop:Generator_RowDeletingName="CustomsApprovedCoverSheetRowDeleting" msprop:Generator_RowChangingName="CustomsApprovedCoverSheetRowChanging" msprop:Generator_RowEvHandlerName="CustomsApprovedCoverSheetRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomsApprovedCoverSheetRowDeleted" msprop:Generator_UserTableName="CustomsApprovedCoverSheet" msprop:Generator_RowChangedName="CustomsApprovedCoverSheetRowChanged" msprop:Generator_RowEvArgName="CustomsApprovedCoverSheetRowChangeEvent" msprop:Generator_RowClassName="CustomsApprovedCoverSheetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Linenumber" msprop:Generator_ColumnVarNameInTable="columnLinenumber" msprop:Generator_ColumnPropNameInRow="Linenumber" msprop:Generator_ColumnPropNameInTable="LinenumberColumn" msprop:Generator_UserColumnName="Linenumber" type="xs:short" minOccurs="0" />
+              <xs:element name="AutoportExportVehiclesID" msprop:Generator_ColumnVarNameInTable="columnAutoportExportVehiclesID" msprop:Generator_ColumnPropNameInRow="AutoportExportVehiclesID" msprop:Generator_ColumnPropNameInTable="AutoportExportVehiclesIDColumn" msprop:Generator_UserColumnName="AutoportExportVehiclesID" type="xs:long" minOccurs="0" />
+              <xs:element name="Forwarder" msprop:Generator_ColumnVarNameInTable="columnForwarder" msprop:Generator_ColumnPropNameInRow="Forwarder" msprop:Generator_ColumnPropNameInTable="ForwarderColumn" msprop:Generator_UserColumnName="Forwarder" type="xs:string" minOccurs="0" />
+              <xs:element name="Destination" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_UserColumnName="Destination" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" type="xs:string" minOccurs="0" />
+              <xs:element name="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model" type="xs:string" minOccurs="0" />
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

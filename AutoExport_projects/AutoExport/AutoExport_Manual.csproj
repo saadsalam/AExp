@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{341454A8-EE98-4940-8E99-D39D1A86D7BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoExport</RootNamespace>
+    <AssemblyName>AutoExport</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\192.168.1.199\dai\ADMIN UPDATES AND INSTALL\AUTOPORTEXPORT_TEST\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>DAI Export</ProductName>
+    <PublisherName>Diversified Automotive, Inc.</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>168</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_png.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>587FAE6C47A66DBBA68E525C07D935AB4AE8B4B0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AutoExport_Manual_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoExport_TestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoExport_TestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditAddlCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditAddlCriteria.Designer.cs">
+      <DependentUpon>frmAddEditAddlCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAreYouSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAreYouSure.Designer.cs">
+      <DependentUpon>frmAreYouSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculateCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculateCharge.Designer.cs">
+      <DependentUpon>frmCalculateCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColorSheetsForPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColorSheetsForPrinter.Designer.cs">
+      <DependentUpon>frmColorSheetsForPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomClearedSheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomClearedSheets.Designer.cs">
+      <DependentUpon>frmCustomClearedSheets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerAdmin.Designer.cs">
+      <DependentUpon>frmCustomerAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDamageCodeNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDamageCodeNote.Designer.cs">
+      <DependentUpon>frmDamageCodeNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDamageCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDamageCodes.Designer.cs">
+      <DependentUpon>frmDamageCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplayreport.Designer.cs">
+      <DependentUpon>frmDisplayreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventProcessing.Designer.cs">
+      <DependentUpon>frmEventProcessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExporterAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExporterAdmin.Designer.cs">
+      <DependentUpon>frmExporterAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFreightForwarderAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreightForwarderAdmin.Designer.cs">
+      <DependentUpon>frmFreightForwarderAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateInvoices.Designer.cs">
+      <DependentUpon>frmGenerateInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintInvoices.Designer.cs">
+      <DependentUpon>frmPrintInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefreshData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefreshData.Designer.cs">
+      <DependentUpon>frmRefreshData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportExportMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportExportMenu.Designer.cs">
+      <DependentUpon>frmImportExportMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportVehYMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportVehYMS.Designer.cs">
+      <DependentUpon>frmImportVehYMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabels.Designer.cs">
+      <DependentUpon>frmLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadSeqSortOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadSeqSortOrder.Designer.cs">
+      <DependentUpon>frmLoadSeqSortOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLockout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLockout.Designer.cs">
+      <DependentUpon>frmLockout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRateAdmin.Designer.cs">
+      <DependentUpon>frmRateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvRptParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvRptParams.Designer.cs">
+      <DependentUpon>frmInvRptParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectBatch.Designer.cs">
+      <DependentUpon>frmSelectBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintSelection.Designer.cs">
+      <DependentUpon>frmPrintSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetSelection.Designer.cs">
+      <DependentUpon>frmSetSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeOutNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeOutNotice.Designer.cs">
+      <DependentUpon>frmTimeOutNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdmin.Designer.cs">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehDetail.Designer.cs">
+      <DependentUpon>frmVehDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehSearch.Designer.cs">
+      <DependentUpon>frmVehSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDestinationAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDestinationAdmin.Designer.cs">
+      <DependentUpon>frmDestinationAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVesselAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVesselAdmin.Designer.cs">
+      <DependentUpon>frmVesselAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoyageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoyageAdmin.Designer.cs">
+      <DependentUpon>frmVoyageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\AdditionalCriteriaItem.cs" />
+    <Compile Include="Objects\AddressInfo.cs" />
+    <Compile Include="Objects\ComboboxItem.cs" />
+    <Compile Include="Objects\ControlInfo.cs" />
+    <Compile Include="Objects\DataOps.cs" />
+    <Compile Include="Objects\Formops.cs" />
+    <Compile Include="Objects\Globalitems.cs" />
+    <Compile Include="Objects\LoadSeqItem.cs" />
+    <Compile Include="Objects\PrintInfo.cs" />
+    <Compile Include="Objects\PrintReport.cs" />
+    <Compile Include="Objects\SProcParameter.cs" />
+    <Compile Include="Objects\User.cs" />
+    <Compile Include="Objects\VINInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordButtonEvents.cs" />
+    <Compile Include="RecordButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecordButtons.Designer.cs">
+      <DependentUpon>RecordButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsCustomsApprovedCoverSheet.cs">
+      <DependentUpon>dsCustomsApprovedCoverSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsCustomsApprovedCoverSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomsApprovedCoverSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsCustomsApprovedSheets.cs">
+      <DependentUpon>dsCustomsApprovedSheets.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsCustomsApprovedSheets.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomsApprovedSheets.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsCustomsSubmitted.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomsSubmitted.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsDestBarcodes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDestBarcodes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsGroundedLaneSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGroundedLaneSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsGroundedSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGroundedSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsInvoice.cs">
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsInvoiceSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvoiceSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsLabels.cs">
+      <DependentUpon>dsLabels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsLabels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLabels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsVehiclesOnHold.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVehiclesOnHold.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsVoyagePushCarList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVoyagePushCarList.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddEditAddlCriteria.resx">
+      <DependentUpon>frmAddEditAddlCriteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAreYouSure.resx">
+      <DependentUpon>frmAreYouSure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculateCharge.resx">
+      <DependentUpon>frmCalculateCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColorSheetsForPrinter.resx">
+      <DependentUpon>frmColorSheetsForPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomClearedSheets.resx">
+      <DependentUpon>frmCustomClearedSheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerAdmin.resx">
+      <DependentUpon>frmCustomerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDamageCodeNote.resx">
+      <DependentUpon>frmDamageCodeNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDamageCodes.resx">
+      <DependentUpon>frmDamageCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisplayreport.resx">
+      <DependentUpon>frmDisplayreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventProcessing.resx">
+      <DependentUpon>frmEventProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExporterAdmin.resx">
+      <DependentUpon>frmExporterAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreightForwarderAdmin.resx">
+      <DependentUpon>frmFreightForwarderAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateInvoices.resx">
+      <DependentUpon>frmGenerateInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintInvoices.resx">
+      <DependentUpon>frmPrintInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefreshData.resx">
+      <DependentUpon>frmRefreshData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportExportMenu.resx">
+      <DependentUpon>frmImportExportMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportVehYMS.resx">
+      <DependentUpon>frmImportVehYMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabels.resx">
+      <DependentUpon>frmLabels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadSeqSortOrder.resx">
+      <DependentUpon>frmLoadSeqSortOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLockout.resx">
+      <DependentUpon>frmLockout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRateAdmin.resx">
+      <DependentUpon>frmRateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvRptParams.resx">
+      <DependentUpon>frmInvRptParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectBatch.resx">
+      <DependentUpon>frmSelectBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintSelection.resx">
+      <DependentUpon>frmPrintSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetSelection.resx">
+      <DependentUpon>frmSetSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeOutNotice.resx">
+      <DependentUpon>frmTimeOutNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdmin.resx">
+      <DependentUpon>frmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehDetail.resx">
+      <DependentUpon>frmVehDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehSearch.resx">
+      <DependentUpon>frmVehSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDestinationAdmin.resx">
+      <DependentUpon>frmDestinationAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVesselAdmin.resx">
+      <DependentUpon>frmVesselAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoyageAdmin.resx">
+      <DependentUpon>frmVoyageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordButtons.resx">
+      <DependentUpon>RecordButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Images\hourglass.jpg" />
+    <Content Include="Reports\rptCustomsApprovedCoversheet.rdlc" />
+    <Content Include="Reports\rptCustomsApprovedSheet.rdlc" />
+    <Content Include="Reports\rptCustomsSubmitted.rdlc" />
+    <Content Include="Reports\rptDestBarcodes.rdlc" />
+    <Content Include="Reports\rptGroundedLaneSummary.rdlc" />
+    <Content Include="Reports\rptGroundedSummary.rdlc" />
+    <Content Include="Reports\rptInvoiceSummary.rdlc" />
+    <Content Include="Reports\rptInvoice_1.rdlc" />
+    <Content Include="Reports\rptVehiclesOnHold.rdlc" />
+    <Content Include="Reports\rptVoyagePushCarList.rdlc" />
+    <Content Include="Reports\subrptInvoice.rdlc" />
+    <Content Include="Reports\newlabel.rdlc" />
+    <EmbeddedResource Include="Reports\test.rdlc" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoExport_Manual_TemporaryKey.pfx" />
+    <None Include="AutoExport_TestDataSet.xsc">
+      <DependentUpon>AutoExport_TestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoExport_TestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoExport_TestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoExport_TestDataSet.xss">
+      <DependentUpon>AutoExport_TestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\dsCustomsApprovedCoverSheet.xsc">
+      <DependentUpon>dsCustomsApprovedCoverSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsCustomsApprovedCoverSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomsApprovedCoverSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsCustomsApprovedCoverSheet.xss">
+      <DependentUpon>dsCustomsApprovedCoverSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsCustomsSubmitted.xsc">
+      <DependentUpon>dsCustomsSubmitted.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsCustomsSubmitted.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomsSubmitted.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsCustomsSubmitted.xss">
+      <DependentUpon>dsCustomsSubmitted.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsDestBarcodes.xsc">
+      <DependentUpon>dsDestBarcodes.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsDestBarcodes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDestBarcodes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsDestBarcodes.xss">
+      <DependentUpon>dsDestBarcodes.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsGroundedLaneSummary.xsc">
+      <DependentUpon>dsGroundedLaneSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsGroundedLaneSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGroundedLaneSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsGroundedLaneSummary.xss">
+      <DependentUpon>dsGroundedLaneSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsGroundedSummary.xsc">
+      <DependentUpon>dsGroundedSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsGroundedSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGroundedSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsGroundedSummary.xss">
+      <DependentUpon>dsGroundedSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsInvoice.xsc">
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsInvoice.xss">
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsInvoiceSummary.xsc">
+      <DependentUpon>dsInvoiceSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsInvoiceSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvoiceSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsInvoiceSummary.xss">
+      <DependentUpon>dsInvoiceSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsVehiclesOnHold.xsc">
+      <DependentUpon>dsVehiclesOnHold.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsVehiclesOnHold.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVehiclesOnHold.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsVehiclesOnHold.xss">
+      <DependentUpon>dsVehiclesOnHold.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsVoyagePushCarList.xsc">
+      <DependentUpon>dsVoyagePushCarList.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsVoyagePushCarList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVoyagePushCarList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsVoyagePushCarList.xss">
+      <DependentUpon>dsVoyagePushCarList.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\PleaseWait.jpg" />
+    <None Include="Resources\Processing.gif" />
+    <None Include="Images\UpMove.jpg" />
+    <None Include="Images\UpMove_grey.jpg" />
+    <None Include="Images\DownMove.jpg" />
+    <None Include="Images\DownMove_grey.jpg" />
+    <Content Include="logo_png.ico" />
+    <None Include="Reports\dsCustomsApprovedSheets.xsc">
+      <DependentUpon>dsCustomsApprovedSheets.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsCustomsApprovedSheets.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomsApprovedSheets.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsCustomsApprovedSheets.xss">
+      <DependentUpon>dsCustomsApprovedSheets.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsLabels.xsc">
+      <DependentUpon>dsLabels.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsLabels.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLabels.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsLabels.xss">
+      <DependentUpon>dsLabels.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\hurt.gif" />
+    <None Include="Resources\Injured.PNG" />
+    <None Include="Resources\Menu1.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Menu.bmp" />
+    <None Include="Sounds\explosion.wav" />
+    <None Include="Images\Color_vertical.jpg" />
+    <None Include="Images\AreYouSure.jpg" />
+    <Content Include="Images\DAI COLOR LOGO HIGH QUALITY 2008.jpg" />
+    <None Include="Resources\Appico.bmp" />
+    <None Include="Images\Ship_2.jpg" />
+    <None Include="Images\logo_png.ico" />
+    <None Include="Images\PrevMove.jpg" />
+    <None Include="Images\NextMove.jpg" />
+    <None Include="Images\person.jpg" />
+    <None Include="Images\gradient_white.jpg" />
+    <None Include="Images\PrevMove_grey.jpg" />
+    <None Include="Images\NextMove_grey.jpg" />
+    <None Include="Resources\explosion.wav" />
+    <None Include="Images\Lockout.png" />
+    <None Include="Images\Ship_2a.jpg" />
+    <Content Include="Images\TEST.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.12.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2014 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.12.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2014 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.12.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2014 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AutoExport.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

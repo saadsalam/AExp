@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomsApprovedSheets" targetNamespace="http://tempuri.org/dsCustomsApprovedSheets.xsd" xmlns:mstns="http://tempuri.org/dsCustomsApprovedSheets.xsd" xmlns="http://tempuri.org/dsCustomsApprovedSheets.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomsApprovedSheets" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCustomsApprovedSheets" msprop:Generator_UserDSName="dsCustomsApprovedSheets">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomsApprovedSheet" msprop:Generator_TableClassName="CustomsApprovedSheetDataTable" msprop:Generator_TableVarName="tableCustomsApprovedSheet" msprop:Generator_RowChangedName="CustomsApprovedSheetRowChanged" msprop:Generator_TablePropName="CustomsApprovedSheet" msprop:Generator_RowDeletingName="CustomsApprovedSheetRowDeleting" msprop:Generator_RowChangingName="CustomsApprovedSheetRowChanging" msprop:Generator_RowEvHandlerName="CustomsApprovedSheetRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomsApprovedSheetRowDeleted" msprop:Generator_RowClassName="CustomsApprovedSheetRow" msprop:Generator_UserTableName="CustomsApprovedSheet" msprop:Generator_RowEvArgName="CustomsApprovedSheetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" type="xs:int" minOccurs="0" />
+              <xs:element name="AutoportExportVehiclesID" msprop:Generator_ColumnVarNameInTable="columnAutoportExportVehiclesID" msprop:Generator_ColumnPropNameInRow="AutoportExportVehiclesID" msprop:Generator_ColumnPropNameInTable="AutoportExportVehiclesIDColumn" msprop:Generator_UserColumnName="AutoportExportVehiclesID" type="xs:int" minOccurs="0" />
+              <xs:element name="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN8" msprop:Generator_ColumnVarNameInTable="columnVIN8" msprop:Generator_ColumnPropNameInRow="VIN8" msprop:Generator_ColumnPropNameInTable="VIN8Column" msprop:Generator_UserColumnName="VIN8" type="xs:string" minOccurs="0" />
+              <xs:element name="VehicleYear" msprop:Generator_ColumnVarNameInTable="columnVehicleYear" msprop:Generator_ColumnPropNameInRow="VehicleYear" msprop:Generator_ColumnPropNameInTable="VehicleYearColumn" msprop:Generator_UserColumnName="VehicleYear" type="xs:int" minOccurs="0" />
+              <xs:element name="Make" msprop:Generator_ColumnVarNameInTable="columnMake" msprop:Generator_ColumnPropNameInRow="Make" msprop:Generator_ColumnPropNameInTable="MakeColumn" msprop:Generator_UserColumnName="Make" type="xs:string" minOccurs="0" />
+              <xs:element name="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model" type="xs:string" minOccurs="0" />
+              <xs:element name="DestinationName" msprop:Generator_ColumnVarNameInTable="columnDestinationName" msprop:Generator_ColumnPropNameInRow="DestinationName" msprop:Generator_ColumnPropNameInTable="DestinationNameColumn" msprop:Generator_UserColumnName="DestinationName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomsApprovedDate" msprop:Generator_ColumnVarNameInTable="columnCustomsApprovedDate" msprop:Generator_ColumnPropNameInRow="CustomsApprovedDate" msprop:Generator_ColumnPropNameInTable="CustomsApprovedDateColumn" msprop:Generator_UserColumnName="CustomsApprovedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BayLocation" msprop:Generator_ColumnVarNameInTable="columnBayLocation" msprop:Generator_ColumnPropNameInRow="BayLocation" msprop:Generator_ColumnPropNameInTable="BayLocationColumn" msprop:Generator_UserColumnName="BayLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="VesselName" msprop:Generator_ColumnVarNameInTable="columnVesselName" msprop:Generator_ColumnPropNameInRow="VesselName" msprop:Generator_ColumnPropNameInTable="VesselNameColumn" msprop:Generator_UserColumnName="VesselName" type="xs:string" minOccurs="0" />
+              <xs:element name="NonRunner" msprop:Generator_ColumnVarNameInTable="columnNonRunner" msprop:Generator_ColumnPropNameInRow="NonRunner" msprop:Generator_ColumnPropNameInTable="NonRunnerColumn" msprop:Generator_UserColumnName="NonRunner" type="xs:short" minOccurs="0" />
+              <xs:element name="HasAudioSystemInd" msprop:Generator_ColumnVarNameInTable="columnHasAudioSystemInd" msprop:Generator_ColumnPropNameInRow="HasAudioSystemInd" msprop:Generator_ColumnPropNameInTable="HasAudioSystemIndColumn" msprop:Generator_UserColumnName="HasAudioSystemInd" type="xs:short" minOccurs="0" />
+              <xs:element name="HasNavigationSystemInd" msprop:Generator_ColumnVarNameInTable="columnHasNavigationSystemInd" msprop:Generator_ColumnPropNameInRow="HasNavigationSystemInd" msprop:Generator_ColumnPropNameInTable="HasNavigationSystemIndColumn" msprop:Generator_UserColumnName="HasNavigationSystemInd" type="xs:short" minOccurs="0" />
+              <xs:element name="custname" msprop:Generator_ColumnVarNameInTable="columncustname" msprop:Generator_ColumnPropNameInRow="custname" msprop:Generator_ColumnPropNameInTable="custnameColumn" msprop:Generator_UserColumnName="custname" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecialInstructions" msprop:Generator_ColumnVarNameInTable="columnSpecialInstructions" msprop:Generator_ColumnPropNameInRow="SpecialInstructions" msprop:Generator_ColumnPropNameInTable="SpecialInstructionsColumn" msprop:Generator_UserColumnName="SpecialInstructions" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomsApprovalPrintedInd" msprop:Generator_ColumnVarNameInTable="columnCustomsApprovalPrintedInd" msprop:Generator_ColumnPropNameInRow="CustomsApprovalPrintedInd" msprop:Generator_ColumnPropNameInTable="CustomsApprovalPrintedIndColumn" msprop:Generator_UserColumnName="CustomsApprovalPrintedInd" type="xs:short" minOccurs="0" />
+              <xs:element name="SheetColor" msprop:Generator_ColumnVarNameInTable="columnSheetColor" msprop:Generator_ColumnPropNameInRow="SheetColor" msprop:Generator_ColumnPropNameInTable="SheetColorColumn" msprop:Generator_UserColumnName="SheetColor" type="xs:string" minOccurs="0" />
+              <xs:element name="FontColor" msprop:Generator_ColumnVarNameInTable="columnFontColor" msprop:Generator_ColumnPropNameInRow="FontColor" msprop:Generator_ColumnPropNameInTable="FontColorColumn" msprop:Generator_UserColumnName="FontColor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

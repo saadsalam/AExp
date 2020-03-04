@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGroundedLaneSummary" targetNamespace="http://tempuri.org/dsGroundedLaneSummary.xsd" xmlns:mstns="http://tempuri.org/dsGroundedLaneSummary.xsd" xmlns="http://tempuri.org/dsGroundedLaneSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGroundedLaneSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsGroundedLaneSummary" msprop:Generator_UserDSName="dsGroundedLaneSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GroundedLaneSummary" msprop:Generator_TableClassName="GroundedLaneSummaryDataTable" msprop:Generator_TableVarName="tableGroundedLaneSummary" msprop:Generator_TablePropName="GroundedLaneSummary" msprop:Generator_RowDeletingName="GroundedLaneSummaryRowDeleting" msprop:Generator_RowChangingName="GroundedLaneSummaryRowChanging" msprop:Generator_RowEvHandlerName="GroundedLaneSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="GroundedLaneSummaryRowDeleted" msprop:Generator_UserTableName="GroundedLaneSummary" msprop:Generator_RowChangedName="GroundedLaneSummaryRowChanged" msprop:Generator_RowEvArgName="GroundedLaneSummaryRowChangeEvent" msprop:Generator_RowClassName="GroundedLaneSummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Lane" msprop:Generator_ColumnVarNameInTable="columnLane" msprop:Generator_ColumnPropNameInRow="Lane" msprop:Generator_ColumnPropNameInTable="LaneColumn" msprop:Generator_UserColumnName="Lane" type="xs:string" minOccurs="0" />
+              <xs:element name="customer" msprop:Generator_ColumnVarNameInTable="columncustomer" msprop:Generator_ColumnPropNameInRow="customer" msprop:Generator_ColumnPropNameInTable="customerColumn" msprop:Generator_UserColumnName="customer" type="xs:string" minOccurs="0" />
+              <xs:element name="DestinationName" msprop:Generator_ColumnVarNameInTable="columnDestinationName" msprop:Generator_ColumnPropNameInRow="DestinationName" msprop:Generator_ColumnPropNameInTable="DestinationNameColumn" msprop:Generator_UserColumnName="DestinationName" type="xs:string" minOccurs="0" />
+              <xs:element name="UnitCount" msprop:Generator_ColumnVarNameInTable="columnUnitCount" msprop:Generator_ColumnPropNameInRow="UnitCount" msprop:Generator_ColumnPropNameInTable="UnitCountColumn" msprop:Generator_UserColumnName="UnitCount" type="xs:int" minOccurs="0" />
+              <xs:element name="ACount" msprop:Generator_ColumnVarNameInTable="columnACount" msprop:Generator_ColumnPropNameInRow="ACount" msprop:Generator_ColumnPropNameInTable="ACountColumn" msprop:Generator_UserColumnName="ACount" type="xs:int" minOccurs="0" />
+              <xs:element name="BCount" msprop:Generator_ColumnVarNameInTable="columnBCount" msprop:Generator_ColumnPropNameInRow="BCount" msprop:Generator_ColumnPropNameInTable="BCountColumn" msprop:Generator_UserColumnName="BCount" type="xs:int" minOccurs="0" />
+              <xs:element name="CCount" msprop:Generator_ColumnVarNameInTable="columnCCount" msprop:Generator_ColumnPropNameInRow="CCount" msprop:Generator_ColumnPropNameInTable="CCountColumn" msprop:Generator_UserColumnName="CCount" type="xs:int" minOccurs="0" />
+              <xs:element name="ECount" msprop:Generator_ColumnVarNameInTable="columnECount" msprop:Generator_ColumnPropNameInRow="ECount" msprop:Generator_ColumnPropNameInTable="ECountColumn" msprop:Generator_UserColumnName="ECount" type="xs:int" minOccurs="0" />
+              <xs:element name="ZCount" msprop:Generator_ColumnVarNameInTable="columnZCount" msprop:Generator_ColumnPropNameInRow="ZCount" msprop:Generator_ColumnPropNameInTable="ZCountColumn" msprop:Generator_UserColumnName="ZCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

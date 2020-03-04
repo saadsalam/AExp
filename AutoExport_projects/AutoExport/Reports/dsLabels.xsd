@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLabels" targetNamespace="http://tempuri.org/dsLabels.xsd" xmlns:mstns="http://tempuri.org/dsLabels.xsd" xmlns="http://tempuri.org/dsLabels.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLabels" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsLabels" msprop:Generator_UserDSName="dsLabels">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Label" msprop:Generator_TableClassName="LabelDataTable" msprop:Generator_TableVarName="tableLabel" msprop:Generator_TablePropName="Label" msprop:Generator_RowDeletingName="LabelRowDeleting" msprop:Generator_RowChangingName="LabelRowChanging" msprop:Generator_RowEvHandlerName="LabelRowChangeEventHandler" msprop:Generator_RowDeletedName="LabelRowDeleted" msprop:Generator_UserTableName="Label" msprop:Generator_RowChangedName="LabelRowChanged" msprop:Generator_RowEvArgName="LabelRowChangeEvent" msprop:Generator_RowClassName="LabelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Destination" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_UserColumnName="Destination" type="xs:string" minOccurs="0" />
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer" type="xs:string" minOccurs="0" />
+              <xs:element name="MakeModel" msprop:Generator_ColumnVarNameInTable="columnMakeModel" msprop:Generator_ColumnPropNameInRow="MakeModel" msprop:Generator_ColumnPropNameInTable="MakeModelColumn" msprop:Generator_UserColumnName="MakeModel" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN_alpha" msprop:Generator_ColumnVarNameInTable="columnVIN_alpha" msprop:Generator_ColumnPropNameInRow="VIN_alpha" msprop:Generator_ColumnPropNameInTable="VIN_alphaColumn" msprop:Generator_UserColumnName="VIN_alpha" type="xs:string" minOccurs="0" />
+              <xs:element name="SizeClass" msprop:Generator_ColumnVarNameInTable="columnSizeClass" msprop:Generator_ColumnPropNameInRow="SizeClass" msprop:Generator_ColumnPropNameInTable="SizeClassColumn" msprop:Generator_UserColumnName="SizeClass" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN_barcode" msprop:Generator_ColumnVarNameInTable="columnVIN_barcode" msprop:Generator_ColumnPropNameInRow="VIN_barcode" msprop:Generator_ColumnPropNameInTable="VIN_barcodeColumn" msprop:Generator_UserColumnName="VIN_barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Baylocation" msprop:Generator_ColumnVarNameInTable="columnBaylocation" msprop:Generator_ColumnPropNameInRow="Baylocation" msprop:Generator_ColumnPropNameInTable="BaylocationColumn" msprop:Generator_UserColumnName="Baylocation" type="xs:string" minOccurs="0" />
+              <xs:element name="DateReceived" msprop:Generator_ColumnVarNameInTable="columnDateReceived" msprop:Generator_ColumnPropNameInRow="DateReceived" msprop:Generator_ColumnPropNameInTable="DateReceivedColumn" msprop:Generator_UserColumnName="DateReceived" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
